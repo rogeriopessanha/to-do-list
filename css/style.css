@@ -16,7 +16,7 @@ body {
 button {
   background: #e8e8e8;
   color: #102f5e;
-  border: 0.1rem solid #0e83f0;
+  border: 0.1rem solid #606674;
   padding: 0.3rem 0.6rem;
   font-size: 1rem;
   cursor: pointer;
@@ -36,6 +36,45 @@ button i {
 input,
 select {
   padding: 0.25rem 0.5rem;
+}
+
+.hide {
+  display: none;
+}
+
+.todo-container {
+  max-width: 450px;
+  margin: 3rem auto;
+  padding: 1.5rem;
+  background: #e8e8e8;
+  border-radius: 1rem;
+}
+.todo-container header {
+  text-align: center;
+  padding: 0 1rem 1rem;
+  border-bottom: 0.1rem solid #606674;
+}
+.todo-container #todo-form,
+.todo-container #edit-form {
+  padding: 1rem;
+  border-bottom: 0.1rem solid #606674;
+}
+.todo-container #todo-form p,
+.todo-container #edit-form p {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+.todo-container #todo-form .form-controle,
+.todo-container #edit-form .form-controle {
+  display: flex;
+}
+.todo-container #todo-form .form-controle input,
+.todo-container #edit-form .form-controle input {
+  margin-right: 0.2rem;
+}
+.todo-container #todo-form #cancel-edit-btn,
+.todo-container #edit-form #cancel-edit-btn {
+  margin-top: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
