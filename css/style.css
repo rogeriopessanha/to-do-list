@@ -76,5 +76,59 @@ select {
 .todo-container #edit-form #cancel-edit-btn {
   margin-top: 1rem;
 }
+.todo-container #toolbar {
+  padding: 1rem;
+  border-bottom: 0.1rem solid #606674;
+  display: flex;
+}
+.todo-container #toolbar #search {
+  border-right: 0.1rem solid #606674;
+  padding-right: 1rem;
+  margin-right: 1rem;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+}
+.todo-container #toolbar #search h4 {
+  margin-bottom: 0.5rem;
+}
+.todo-container #toolbar #search form {
+  display: flex;
+}
+.todo-container #toolbar #search input {
+  width: 100%;
+  margin-right: 0.3rem;
+}
+.todo-container #toolbar #filter {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+}
+.todo-container #toolbar #filter h4 {
+  margin-bottom: 0.5rem;
+}
+.todo-container #todo-list .todo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 0.1rem solid #606674;
+  transition: 0.3s;
+}
+.todo-container #todo-list .todo h3 {
+  flex: 1;
+  font-size: 0.9rem;
+}
+.todo-container #todo-list .todo button {
+  margin-left: 0.4rem;
+}
+.todo-container #todo-list .done {
+  background: #395169;
+}
+.todo-container #todo-list .done h3 {
+  color: #fff;
+  text-decoration: line-through;
+  font-style: italic;
+}
 
 /*# sourceMappingURL=style.css.map */

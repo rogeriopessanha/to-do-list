@@ -89,4 +89,78 @@ select{
             margin-top: 1rem;
         }
     }
+
+    #toolbar{
+        padding: 1rem;
+        border-bottom: $borda;
+        display: flex;
+
+        #search{
+
+            h4{
+                margin-bottom: .5rem;
+            }
+
+            border-right: $borda;
+            padding-right: 1rem;
+            margin-right: 1rem;
+            width: 65%;
+            display: flex;
+            flex-direction: column;
+
+            form{
+                display: flex;
+            }
+
+            input{
+                width: 100%;
+                margin-right: .3rem;
+            }
+        }
+
+        #filter{
+
+            h4{
+                margin-bottom: .5rem;
+            }
+
+            width: 35%;
+            display: flex;
+            flex-direction: column;
+
+            // select{
+            //     flex: 1;
+            // }
+        }
+    }
+
+    #todo-list{
+        .todo{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 1rem;
+            border-bottom: $borda;
+            transition: .3s;
+
+            h3{
+                flex: 1;
+                font-size: .9rem;
+            }
+
+            button{
+                margin-left: .4rem;
+            }
+        }
+
+        .done{
+            background: #395169;
+
+            h3{
+                color: $branco;
+                text-decoration: line-through;
+                font-style: italic;
+            }
+        }
+    }
 }
