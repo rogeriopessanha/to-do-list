@@ -1,3 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica;
+}
 
+body {
+  background-image: url(../img/fundo.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+button {
+  background: #e8e8e8;
+  color: #102f5e;
+  border: 0.1rem solid #0e83f0;
+  padding: 0.3rem 0.6rem;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.4s;
+}
+button:hover {
+  background: #102f5e;
+  color: #fff;
+}
+button i {
+  pointer-events: none;
+}
+
+input,
+select {
+  padding: 0.25rem 0.5rem;
+}
 
 /*# sourceMappingURL=style.css.map */
