@@ -3,8 +3,8 @@
 const todoForm = document.querySelector('#todo-form')
 const todoInput = document.querySelector('#todo-input')
 const todoList = document.querySelector('#todo-list')
-const editform = document.querySelector('#edit-form')
-const editForm = document.querySelector('#edit-input')
+const editForm = document.querySelector('#edit-form')
+const editInput = document.querySelector('#edit-input')
 const cancelEditBtn = document.querySelector('#cancel-edit-btn')
 
 let oldInputValue
@@ -12,6 +12,7 @@ let oldInputValue
 
 // funções
 const saveTodo = (text) =>{
+
     const todo = document.createElement('div')
     todo.classList.add('todo')
 
@@ -40,7 +41,7 @@ const saveTodo = (text) =>{
     todoInput.focus()
 }
 
-const toggleForm = () =>{
+const toggleForms = () =>{
     editForm.classList.toggle('hide')
     todoForm.classList.toggle('hide')
     todoList.classList.toggle('hide')
@@ -79,7 +80,7 @@ document.addEventListener('click', (e) =>{
     }
 
     if (targetEl.classList.contains('edit-todo')) {
-        toggleForm()
+        toggleForms()
 
         editInput.value = todoTitle
         oldInputValue.value = todoTitle
@@ -89,5 +90,5 @@ document.addEventListener('click', (e) =>{
 cancelEditBtn.addEventListener('click', (e) =>{
     e.preventDefault()
 
-    toggleForm()
+    toggleForms()
 })
