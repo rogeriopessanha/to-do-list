@@ -6,6 +6,7 @@ const todoList = document.querySelector('#todo-list')
 const editForm = document.querySelector('#edit-form')
 const editInput = document.querySelector('#edit-input')
 const cancelEditBtn = document.querySelector('#cancel-edit-btn')
+// const filterOption = document.querySelector('#filter-select')
 
 let oldInputValue
 
@@ -59,6 +60,8 @@ const updateTodo = (text) => {
         }
     })
 }
+
+
 
 
 
@@ -118,3 +121,6 @@ editForm.addEventListener('submit', (e) => {
 
     toggleForms()
 })
+
+// filterOption.addEventListener('DOMContentLoaded', getTodos)
+// todoInput = document.querySelector('')
