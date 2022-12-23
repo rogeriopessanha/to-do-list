@@ -43,7 +43,7 @@ select {
 }
 
 .todo-container {
-  max-width: 450px;
+  max-width: 30rem;
   margin: 3rem auto;
   padding: 1.5rem;
   background: #e8e8e8;
@@ -63,49 +63,21 @@ select {
 .todo-container #edit-form p {
   margin-bottom: 0.5rem;
   font-weight: 600;
+  text-align: center;
 }
 .todo-container #todo-form .form-controle,
 .todo-container #edit-form .form-controle {
   display: flex;
+  justify-content: center;
 }
 .todo-container #todo-form .form-controle input,
 .todo-container #edit-form .form-controle input {
   margin-right: 0.2rem;
+  width: 15rem;
 }
 .todo-container #todo-form #cancel-edit-btn,
 .todo-container #edit-form #cancel-edit-btn {
   margin-top: 1rem;
-}
-.todo-container #toolbar {
-  padding: 1rem;
-  border-bottom: 0.1rem solid #606674;
-  display: flex;
-}
-.todo-container #toolbar #search {
-  border-right: 0.1rem solid #606674;
-  padding-right: 1rem;
-  margin-right: 1rem;
-  width: 65%;
-  display: flex;
-  flex-direction: column;
-}
-.todo-container #toolbar #search h4 {
-  margin-bottom: 0.5rem;
-}
-.todo-container #toolbar #search form {
-  display: flex;
-}
-.todo-container #toolbar #search input {
-  width: 100%;
-  margin-right: 0.3rem;
-}
-.todo-container #toolbar #filter {
-  width: 35%;
-  display: flex;
-  flex-direction: column;
-}
-.todo-container #toolbar #filter h4 {
-  margin-bottom: 0.5rem;
 }
 .todo-container #todo-list .todo {
   display: flex;

@@ -55,7 +55,7 @@ select{
 
 
 .todo-container{
-    max-width: 450px;
+    max-width: 30rem;
     margin: 3rem auto;
     padding: 1.5rem;
     background: $fundo;
@@ -75,13 +75,16 @@ select{
         p{
             margin-bottom: .5rem;
             font-weight: 600;
+            text-align: center;
         }
 
         .form-controle{
             display: flex;
+            justify-content: center;
 
             input{
                 margin-right: .2rem;
+                width: 15rem;
             }
         }
 
@@ -90,49 +93,7 @@ select{
         }
     }
 
-    #toolbar{
-        padding: 1rem;
-        border-bottom: $borda;
-        display: flex;
-
-        #search{
-
-            h4{
-                margin-bottom: .5rem;
-            }
-
-            border-right: $borda;
-            padding-right: 1rem;
-            margin-right: 1rem;
-            width: 65%;
-            display: flex;
-            flex-direction: column;
-
-            form{
-                display: flex;
-            }
-
-            input{
-                width: 100%;
-                margin-right: .3rem;
-            }
-        }
-
-        #filter{
-
-            h4{
-                margin-bottom: .5rem;
-            }
-
-            width: 35%;
-            display: flex;
-            flex-direction: column;
-
-            // select{
-            //     flex: 1;
-            // }
-        }
-    }
+    
 
     #todo-list{
         .todo{
